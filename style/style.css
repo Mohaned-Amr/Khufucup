@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 :root {
-  --main-color: #E24217;
+  --main-color: #e24217;
   --main-transition: 0.5s;
   --main-padding-top: 50px;
   --main-padding-bottom: 50px;
   --main-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%),
     0 2px 4px 0 rgb(0 0 0 / 12%);
-  --main-text-shadow-title: 4px 2px 0px white;
+  --main-text-shadow-title: 4px 2px 0px black;
   --main-text-shadow-p: 1px 2px 0px #5e5e5e;
 }
 html {
@@ -69,7 +69,7 @@ img {
 }
 /* End Global Rules */
 /* Start Header */
-.header{
+.header {
   background-color: white;
   -webkit-box-shadow: 0 0 10px #e4e4e4;
   -moz-box-shadow: 0 0 10px #e4e4e4;
@@ -166,7 +166,6 @@ img {
 
 /* ☑️ المينيو في الشاشة الكبيرة */
 
-
 /* ☑️ لما الشاشة تصغر */
 @media (max-width: 767px) {
   .menu-icon {
@@ -181,7 +180,7 @@ img {
     right: 0;
     width: 100%;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
   .nav-bar.active {
@@ -204,8 +203,14 @@ img {
 
 /* ☑️ أنيميشن نزول القائمة */
 @keyframes slideDown {
-  from {transform: translateY(-20px); opacity: 0;}
-  to {transform: translateY(0); opacity: 1;}
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* ++++++++++++++++++++++++++ */
@@ -250,7 +255,6 @@ img {
   transform: translate(-50%, -50%);
   position: relative;
   text-shadow: var(--main-text-shadow-title);
-
 }
 .home .container h1::before {
   content: "";
@@ -346,7 +350,7 @@ img {
 .match .container {
   position: relative;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
@@ -404,10 +408,10 @@ img {
     width: 60%;
   }
 }
-.match .container .box:hover{
+.match .container .box:hover {
   box-shadow: -8px 8px 0 #e24217;
 }
-.match .container .box .image img{
+.match .container .box .image img {
   border-radius: 6px;
   transition: var(--main-transition);
 }
@@ -423,7 +427,7 @@ img {
 .store .container {
   position: relative;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -471,7 +475,7 @@ img {
 .store .container .box .image:hover {
   box-shadow: -5px 5px 0 #e24217;
 }
-.store .container .box .image img{
+.store .container .box .image img {
   max-width: 100%;
   transition: var(--main-transition);
   cursor: pointer;
@@ -493,7 +497,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: var(--main-text-shadow-title);
   transition: var(--main-transition);
   top: 40px;
   opacity: 0;
@@ -533,7 +536,7 @@ img {
 .stadium .container {
   position: relative;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -581,7 +584,7 @@ img {
 .stadium .container .box .image:hover {
   box-shadow: -5px 5px 0 #e24217;
 }
-.stadium .container .box .image img{
+.stadium .container .box .image img {
   max-width: 100%;
   transition: var(--main-transition);
   cursor: pointer;
@@ -603,7 +606,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: var(--main-text-shadow-title);
+  /* text-shadow: var(--main-text-shadow-title); */
   transition: var(--main-transition);
   cursor: pointer;
 }
@@ -620,24 +623,20 @@ img {
   border: none;
   border-radius: 0 0 6px 6px;
   cursor: pointer;
+  top: 1px;
   transition: var(--main-transition);
-  opacity: 0;
-  top: 40px;
 }
 .stadium .container .box .image .location:hover {
   background-color: #e24217;
   border-color: #e24217;
   color: #111111;
 }
-.stadium .container .box .image:hover .location {
-  opacity: 1;
-  top: 1px;
-}
+
 /* End Store Section */
 /* Start Footer */
 .copyright {
   text-align: center;
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
   margin-top: 30px;
   border-top: 1px solid #e24217;
   color: white;
