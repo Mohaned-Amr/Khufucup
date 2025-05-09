@@ -123,6 +123,7 @@ img {
   text-transform: uppercase;
   transition: var(--main-transition);
   overflow: hidden;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   .header .nav-bar li a {
